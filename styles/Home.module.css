@@ -23,7 +23,7 @@
 }
 
 .topo{
-  background-image: url('../public/img/bk-topo.png');
+  background-image: url('/img/bk-topo.png');
   background-repeat: no-repeat;
   max-width: 1920px;
   width: 100%;
@@ -78,7 +78,7 @@
 }
 
 .heroes{
-  background-image: url('../public/img/bk-02.png');
+  background-image: url('/img/bk-02.png');
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -91,7 +91,7 @@
 }
 
 .volei{
-  background-image: url('../public/img/bk-03.png');
+  background-image: url('/img/bk-03.png');
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -104,7 +104,7 @@
 }
 
 .corrida{
-  background-image: url('../public/img/bk-04.png');
+  background-image: url('/img/bk-04.png');
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
