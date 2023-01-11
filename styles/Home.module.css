@@ -320,7 +320,7 @@
     background-image: none;
     height: 920px;
     flex-direction: column;
-    padding-top: 25px;
+    padding-top: 50px;
     display: grid;
     text-align: center;
     margin: auto;
@@ -339,6 +339,7 @@
   .txtTravessia,.txtHeroes,.txtCorrida,.txtVolei,.txtMTB{
     justify-content: center;
     align-items: center;
+
   }
 }
 
@@ -346,5 +347,19 @@
   .imgTopo{
     width: 350px;
     height: 350px;
+  }
+
+  .txtTravessia,.txtHeroes,.txtVolei,.txtCorrida,.txtMTB{
+    transform: translateY(0px);
+  }
+
+  .txtDataTrav,.txtDataHeroes,.txtDataVolei,.txtDataCorrida,.txtDataMTB{
+    transform: translateX(0px);
+  }
+
+  .txtTravessia p,.txtHeroes p,.txtVolei p,.txtCorrida p,.txtMTB p{
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
