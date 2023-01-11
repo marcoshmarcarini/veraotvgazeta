@@ -321,5 +321,30 @@
     height: 920px;
     flex-direction: column;
     padding-top: 25px;
+    display: grid;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .videoTravessia video{
+    width: 360px !important;
+    height: 240px !important;
+  }
+
+  .imgTopo{
+    width: 500px;
+    height: 500px;
+  }
+
+  .txtTravessia,.txtHeroes,.txtCorrida,.txtVolei,.txtMTB{
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px){
+  .imgTopo{
+    width: 350px;
+    height: 350px;
   }
 }
