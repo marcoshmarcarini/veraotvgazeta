@@ -7,8 +7,6 @@
 }
 */
 
-
-
 @keyframes aparecer{from{opacity: 0;}to{opacity: 1;}}
 
 .container {
@@ -41,7 +39,7 @@
   padding-right: 20px;
   text-align: center;
 }
-.txtTrav{
+.txtTrav,.txtHer,.txtVol,.txtCor,.txtMt{
   text-align: start;
 }
 
@@ -52,6 +50,12 @@
 .txtTexto{
   max-width: 250px;
   font-weight: 300;
+}
+
+.foto{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .travessia{
@@ -67,11 +71,19 @@
   padding-bottom: 50px;
 }
 
-.txtTravessia{
+.txtTravessia,.txtHeroes,.txtVolei,.txtCorrida,.txtMTB{
   display: flex;
   flex-direction: column;
   gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
 }
+
+.txtDataTrav{
+  transform: translateX(-50px);
+  margin-bottom: 20px;
+}
+
 
 .fotoTravessia{
   display: none;
@@ -90,6 +102,18 @@
   padding-bottom: 50px;
 }
 
+.fotoHeroes img{
+  display: block;
+  object-fit: cover;
+}
+
+.txtDataHeroes{
+  transform: translateX(-20px);
+  margin-bottom: 20px;
+}
+
+
+
 .volei{
   background-image: url('/img/bk-03.png');
   background-repeat: no-repeat;
@@ -103,6 +127,16 @@
   padding-bottom: 50px;
 }
 
+.fotoVolei img{
+  display: block;
+  object-fit: cover;
+}
+
+.txtDataVolei{
+  transform: translateX(-20px);
+  margin-bottom: 20px;
+}
+
 .corrida{
   background-image: url('/img/bk-04.png');
   background-repeat: no-repeat;
@@ -114,6 +148,39 @@
   gap: 20px;
   height: 777px;
   padding-bottom: 50px;
+}
+
+.fotoCorrida img{
+  display: block;
+  object-fit: cover;
+}
+
+.txtDataCorrida{
+  transform: translateX(-50px);
+  margin-bottom: 20px;
+}
+
+.mtb{
+  background-image: url('/img/bk-05.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 777px;
+  padding-bottom: 50px;
+}
+
+.fotoMTB img{
+  display: block;
+  object-fit: cover;
+}
+
+.txtDataMTB{
+  transform: translateX(0px);
+  margin-bottom: 0px;
 }
 
 .main {
@@ -233,3 +300,26 @@
 .linha{width: 100%; opacity: 1; color: #fff;}
 .txtRodape{color: #fff; margin-bottom: 20px; margin-top: 20px;}
 .footer{background-color: #42BC9B; display: flex; flex-direction: column; flex-wrap: nowrap; align-items: center; align-content: center;}
+
+@media (max-width:1180px) {
+  .travessia, .heroes, .volei, .corrida, .mtb{
+    background-image: none;
+    height: 920px;
+    flex-wrap: wrap;
+  }
+
+  .travessia{background-color: #874794;}
+  .heroes{background-color: #ff3e86;}
+  .volei{background-color: #00b893;}
+  .corrida{background-color: #e74624;}
+  .mtb{background-color: #ed302f;}
+}
+
+@media (max-width: 700px) {
+  .travessia, .heroes, .volei, .corrida, .mtb{
+    background-image: none;
+    height: 920px;
+    flex-direction: column;
+    padding-top: 25px;
+  }
+}
