@@ -349,8 +349,17 @@
     height: 350px;
   }
 
-  .txtTravessia,.txtHeroes,.txtVolei,.txtCorrida,.txtMTB{
+  .travessia{
+    margin-bottom: -80px;
+    padding-top: 0px;
+  }
+
+
+  .txtHeroes,.txtVolei,.txtCorrida,.txtMTB{
     transform: translateY(0px);
+  }
+  .txtTravessia{
+    transform: translateY(-55px);
   }
 
   .txtDataTrav,.txtDataHeroes,.txtDataVolei,.txtDataCorrida,.txtDataMTB{
