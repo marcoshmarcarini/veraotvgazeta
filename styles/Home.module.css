@@ -335,7 +335,7 @@
     margin: auto;
   }
   
-  .videoTravessia video, .videoHeroes video{
+  .videoTravessia video, .videoHeroes video, .videoVolei video{
     width: 360px !important;
     height: 240px !important;
   }
