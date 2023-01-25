@@ -4,17 +4,18 @@ import Link from 'next/link'
 import { brasb, montserrat } from '../../pages/_app'
 
 
-/* Links das Modalidades com links de inscrição e fotos */
+/* Links das Modalidades com links de inscrição, fotos e documentos*/
 const linkVolei = `https://www.ticketsports.com.br/e/heroes-race-etapa-marataizes-es-34985`
-const linkVoleiFotos = `Aguardando Link das fotos`
+const linkVoleiFotos = `https://flic.kr/s/aHBqjApu8t`
+const linkVoleiResultado = `/pdf/resultado_volei.pdf`
 
+/* Css dentro de variáveis */
 const txtData = {color: '#ffcd53',fontSize: '90px',textAlign: 'end'}
 const txtLocalVol = {color: '#5200a8', fontSize: '15px', textAlign:'end', fontWeight: '900'}
 const txtTitleVol = {fontSize: '40px', maxWidth: '250px', marginBottom: '20px'}
 const btnVolei = {display: 'none', backgroundColor: '#5200a8',color:'#ffffff',fontWeight: '500',padding: '10px',borderRadius: '50px',textDecoration: 'none',marginBottom: '20px',fontSize: '1.2rem'}
-const btnVoleiFotos = {display:'none',backgroundColor: '#5200a8',color:'#ffffff',fontWeight: '500',padding: '10px',borderRadius: '50px',textDecoration: 'none',marginBottom: '20px',fontSize: '1.2rem'}
-
-const videoSize = { width: '640px', height: '360px', display: 'none' }
+const btnVoleiFotos = {display:'block',backgroundColor: '#5200a8',color:'#ffffff',fontWeight: '500',padding: '10px',borderRadius: '50px',textDecoration: 'none',marginBottom: '20px',fontSize: '1.2rem'}
+const videoSize = { width: '640px', height: '360px', display: 'block' }
 
 export default function Volei(){
     return(
@@ -24,8 +25,8 @@ export default function Volei(){
                         <Image src={`/img/Foto-volei.png`} width={300} height={343} quality={100} alt={`Torneio de Vôlei`}/>
                     </div>
                     <div className={style.videoVolei}>
-                        <video controls style={videoSize} poster={`/videos/travessia-capa.png`}>
-                            <source src={'/videos/video-travessia.mp4'} />
+                        <video controls style={videoSize} poster={`/videos/volei-capa.png`}>
+                            <source src={'/videos/video-volei.mp4'} />
                         </video>
                     </div>
                     <div className={brasb.className}>
@@ -48,10 +49,13 @@ export default function Volei(){
                             TORNEIO DE VÔLEI
                         </p>
                         <p className={`${style.txtTexto} ${montserrat.className}`}>
-                            Prepara o saque, levanta e fecha o set! Participe direto das areia da Pérola Capixaba.
+                            A perola capixaba recebeu 60 atletas que esbanjaram talento e deram um show no torneio de vôlei feminino que foi um sucesso!
                         </p>
                     </div>
                     <div className={brasb.className}>
+                         <Link href={`${linkVoleiResultado}`} style={btnVoleiFotos} target={`_blank`}>
+                            Confira o Resultado
+                         </Link> 
                          <Link href={`${linkVoleiFotos}`} style={btnVoleiFotos} target={`_blank`}>
                             Confira as Fotos
                          </Link> 

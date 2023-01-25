@@ -127,7 +127,7 @@
 }
 
 .fotoVolei img{
-  display: block;
+  display: none;
   object-fit: cover;
 }
 
