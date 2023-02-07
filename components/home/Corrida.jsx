@@ -14,7 +14,7 @@ const txtLocalCor = {color: '#5200a8', fontSize: '15px', textAlign:'end', fontWe
 const txtTitleCor = {fontSize: '30px', maxWidth: '200px', marginBottom: '10px'}
 const btnCorrida = {display: 'none', backgroundColor: '#5200a8',color:'#ffffff',fontWeight: '500',padding: '10px',borderRadius: '50px',textDecoration: 'none',marginBottom: '20px',fontSize: '1.2rem'}
 const btnCorridaFotos = {display:'flex',backgroundColor: '#5200a8',color:'#ffffff',fontWeight: '500',padding: '10px',borderRadius: '50px',textDecoration: 'none',marginBottom: '20px',fontSize: '1.2rem'}
-const btnCorridaRes = {display:'flex',backgroundColor: '#e51a36',color:'#ffffff',fontWeight: '500',padding: '10px',borderRadius: '50px',textDecoration: 'none',marginBottom: '20px',fontSize: '1.2rem'}
+const btnCorridaRes = {display:'flex',backgroundColor: '#00b893',color:'#ffffff',fontWeight: '500',padding: '10px',borderRadius: '50px',textDecoration: 'none',marginBottom: '20px',fontSize: '1.2rem'}
 const videoSize = { width: '640px', height: '360px', display: 'flex' }
 
 const botoes = {display: 'flex', flexWrap: 'wrap', gap: '10px'}

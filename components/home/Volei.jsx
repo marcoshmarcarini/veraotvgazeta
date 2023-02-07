@@ -14,7 +14,9 @@ const txtData = {color: '#ffcd53',fontSize: '60px',textAlign: 'end', }
 const txtLocalVol = {color: '#5200a8', fontSize: '15px', textAlign:'end', fontWeight: '900'}
 const txtTitleVol = {fontSize: '35px', maxWidth: '250px', marginBottom: '10px'}
 const btnVolei = {display: 'none', backgroundColor: '#5200a8',color:'#ffffff',fontWeight: '500',padding: '10px',borderRadius: '50px',textDecoration: 'none',marginBottom: '20px',fontSize: '1.2rem'}
-const btnVoleiFotos = {display:'block',backgroundColor: '#5200a8',color:'#ffffff',fontWeight: '500',padding: '10px',borderRadius: '50px',textDecoration: 'none',marginBottom: '20px',fontSize: '1.2rem'}
+const btnVoleiFotos = {display:'block',backgroundColor: '#ffb705',color:'#ffffff',fontWeight: '500',padding: '10px',borderRadius: '50px',textDecoration: 'none',marginBottom: '20px',fontSize: '1.2rem'}
+const btnVoleiResultado = {display:'block',backgroundColor: '#5200a8',color:'#ffffff',fontWeight: '500',padding: '10px',borderRadius: '50px',textDecoration: 'none',marginBottom: '20px',fontSize: '1.2rem'}
+
 const videoSize = { width: '640px', height: '360px', display: 'block' }
 const botoes = {display: 'flex', flexWrap: 'wrap', gap: '10px'}
 
@@ -57,7 +59,7 @@ export default function Volei(){
                          <Link href={`${linkVoleiResultado}`} style={btnVoleiFotos} target={`_blank`}>
                             Confira o Resultado
                          </Link> 
-                         <Link href={`${linkVoleiFotos}`} style={btnVoleiFotos} target={`_blank`}>
+                         <Link href={`${linkVoleiFotos}`} style={btnVoleiResultado} target={`_blank`}>
                             Confira as Fotos
                          </Link> 
                     </div>
