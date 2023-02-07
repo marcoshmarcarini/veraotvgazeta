@@ -9,13 +9,14 @@ const linkHeroes = `https://www.ticketsports.com.br/e/heroes-race-etapa-marataiz
 const linkHeroesFotos = `https://flic.kr/s/aHBqjAoDAP`
 const resHeroes = `http://www.chiptiming.com.br/resultados/heroes/heroes`
 
-const txtData = {color: '#ffcd53',fontSize: '90px',textAlign: 'end'}
+const txtData = {color: '#ffcd53',fontSize: '60px',textAlign: 'end', }
 const txtLocalHer = {color: '#5200a8', fontSize: '15px', textAlign:'end', fontWeight: '900'}
-const txtTitleHer = {fontSize: '40px', maxWidth: '250px', marginBottom: '20px'}
+const txtTitleHer = {fontSize: '35px', maxWidth: '250px', marginBottom: '10px'}
 const btnHeroes = {display:'none', backgroundColor: '#5200a8',color:'#ffffff',fontWeight: '500',padding: '10px',borderRadius: '50px',textDecoration: 'none',marginBottom: '20px',fontSize: '1.2rem'}
 const btnHeroesFotos = {display:'flex',backgroundColor: '#5200a8',color:'#ffffff',fontWeight: '500',padding: '10px',borderRadius: '50px',textDecoration: 'none',marginBottom: '20px',fontSize: '1.2rem'}
 const btnHeroesRes = {display:'flex',backgroundColor: '#e51a36',color:'#ffffff',fontWeight: '500',padding: '10px',borderRadius: '50px',textDecoration: 'none',marginBottom: '20px',fontSize: '1.2rem'}
 const videoSize = { width: '640px', height: '360px', display: 'flex' }
+const botoes = {display: 'flex', flexWrap: 'wrap', gap: '10px'}
 
 export default function Heroes(){
     return(
@@ -52,7 +53,7 @@ export default function Heroes(){
                              No dia 14/01, Itapemirim recebeu mais de 100 competidores no desafio Heroes Race na praia de Itaóca. Agilidade, atenção e força foram os segredos para ganhar essa competição.
                         </p>
                     </div>
-                    <div className={brasb.className}>
+                    <div className={brasb.className} style={botoes}>
                         <Link href={`${resHeroes}`} style={btnHeroesRes} target={`_blank`}>
                             Confira o Resultado
                          </Link> 

@@ -6,15 +6,16 @@ import { brasb, montserrat } from '../../pages/_app'
 
 /* Links das Modalidades com links de inscrição e fotos */
 const linkMTB = `https://forms.gle/dKZ84tUQVpPREntN9`
-const linkMTBFotos = `Aguardando Link das fotos`
+const linkMTBFotos = `https://flic.kr/s/aHBqjAqrKc`
 
-const txtData = {color: '#ffcd53',fontSize: '90px',textAlign: 'end'}
-const txtLocalMTB = {color: '#5200a8', fontSize: '15px', textAlign:'end', fontWeight: '900'}
-const txtTitleMTB = {fontSize: '40px', maxWidth: '250px', marginBottom: '0px'}
-const btnMTB = {backgroundColor: '#5200a8',color:'#ffffff',fontWeight: '500',padding: '10px',borderRadius: '50px',textDecoration: 'none',marginBottom: '20px',fontSize: '1.2rem'}
-const btnMTBFotos = {display:'none',backgroundColor: '#5200a8',color:'#ffffff',fontWeight: '500',padding: '10px',borderRadius: '50px',textDecoration: 'none',marginBottom: '20px',fontSize: '1.2rem'}
+const txtData = {color: '#ffcd53',fontSize: '60px',textAlign: 'end', }
+const txtLocalMTB = {color: '#5200a8', fontSize: '15px', textAlign:'end', fontWeight: '900', marginLeft: "auto", maxWidth: "50px", transform: "TranslateX(-50px)"}
+const txtTitleMTB = {fontSize: '35px', maxWidth: '250px', marginBottom: '0px'}
+const btnMTB = {display: 'none', backgroundColor: '#5200a8',color:'#ffffff',fontWeight: '500',padding: '10px',borderRadius: '50px',textDecoration: 'none',marginBottom: '20px',fontSize: '1.2rem'}
+const btnMTBFotos = {display:'flex',backgroundColor: '#5200a8',color:'#ffffff',fontWeight: '500',padding: '10px',borderRadius: '50px',textDecoration: 'none',marginBottom: '20px',fontSize: '1.2rem'}
 
-const videoSize = { width: '640px', height: '360px', display: 'none' }
+const videoSize = { width: '640px', height: '360px', display: 'flex' }
+const botoes = {display: 'flex', flexWrap: 'wrap', gap: '10px'}
 
 export default function MTB(){
     return(
@@ -24,8 +25,8 @@ export default function MTB(){
                         <Image src={`/img/Foto-mtb.png`} width={300} height={343} quality={100} alt={`8ª Corrida TV Gazeta Sul`}/>
                     </div>
                     <div className={style.videoMTB}>
-                        <video controls style={videoSize} poster={`/videos/travessia-capa.png`}>
-                            <source src={'/videos/video-travessia.mp4'} />
+                        <video controls style={videoSize} poster={`/videos/mtb-capa.png`}>
+                            <source src={'/videos/video-mtb.mp4'} />
                         </video>
                     </div>
                     <div className={brasb.className}>
@@ -48,10 +49,10 @@ export default function MTB(){
                             CIRCUITO MTB
                         </p>
                         <p className={`${style.txtTexto} ${montserrat.className}`}>
-                            Essa é pra quem não dispensa uma boa pedalada! Presidente Kennedy vai ser palco de altas manobras com bikes incríveis! Venha e participe!
+                            O circuito MTB em Presidente Kennedy atraiu diversos ciclistas que se desafiaram em terrenos de todos os tipos.
                         </p>
                     </div>
-                    <div className={brasb.className}>
+                    <div className={brasb.className} style={botoes}>
                          <Link href={`${linkMTBFotos}`} style={btnMTBFotos} target={`_blank`}>
                             Confira as Fotos
                          </Link> 
