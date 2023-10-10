@@ -8,7 +8,7 @@ export default function Rodape(){
         <div style={rodape}>
             <footer className={styles.footer}>
                 <p className={styles.txtRodape}>
-                <span dangerouslySetInnerHTML={{ "__html": "&copy;" }} /> 2023. Todos os direitos reservados a <b>TV Gazeta Sul.</b></p>
+                <span dangerouslySetInnerHTML={{ "__html": "&copy;" }} /> 2024. Todos os direitos reservados a <b>TV Gazeta Sul.</b></p>
             </footer>
         </div>
     )

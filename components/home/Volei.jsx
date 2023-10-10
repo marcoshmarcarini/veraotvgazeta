@@ -27,11 +27,11 @@ export default function Volei(){
                     <div className={style.fotoVolei}>
                         <Image src={`/img/Foto-volei.png`} width={300} height={343} quality={100} alt={`Torneio de Vôlei`}/>
                     </div>
-                    <div className={style.videoVolei}>
+                    {/* <div className={style.videoVolei}>
                         <video controls style={videoSize} poster={`/videos/volei-capa.png`}>
                             <source src={'/videos/video-volei.mp4'} />
                         </video>
-                    </div>
+                    </div> */}
                     <div className={brasb.className}>
                          <Link href={`${linkVolei}`} style={btnVolei} target={`_blank`}>
                             Inscreva-se
@@ -42,7 +42,7 @@ export default function Volei(){
                     <div className={style.txtVol}>
                         <div className={style.txtDataVolei}>
                             <p className={brasb.className} style={txtData}>
-                                21/01
+                                20/01
                             </p>
                             <p className={montserrat.className} style={txtLocalVol}>
                                 MARATAÍZES
@@ -51,17 +51,17 @@ export default function Volei(){
                         <p className={brasb.className} style={txtTitleVol}>
                             TORNEIO DE VÔLEI
                         </p>
-                        <p className={`${style.txtTexto} ${montserrat.className}`}>
+                        {/* <p className={`${style.txtTexto} ${montserrat.className}`}>
                             A perola capixaba recebeu 60 atletas que esbanjaram talento e deram um show no torneio de vôlei feminino que foi um sucesso!
-                        </p>
+                        </p> */}
                     </div>
                     <div className={brasb.className} style={botoes}>
-                         <Link href={`${linkVoleiResultado}`} style={btnVoleiFotos} target={`_blank`}>
-                            Confira o Resultado
+                         <Link href={`${linkVolei}`} style={btnVoleiFotos} target={`_blank`}>
+                            Inscreva-se
                          </Link> 
-                         <Link href={`${linkVoleiFotos}`} style={btnVoleiResultado} target={`_blank`}>
+                         {/* <Link href={`${linkVoleiFotos}`} style={btnVoleiResultado} target={`_blank`}>
                             Confira as Fotos
-                         </Link> 
+                         </Link>  */}
                     </div>
                 </div>
         </div>

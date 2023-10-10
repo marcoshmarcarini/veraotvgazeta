@@ -25,11 +25,11 @@ export default function Travessia(){
                     <div className={style.fotoTravessia}>
                         <Image src={`/img/Foto-travessia.png`} width={300} height={343} alt={`Travessia Aquática`}/>
                     </div>
-                    <div className={style.videoTravessia}>
+                    {/* <div className={style.videoTravessia}>
                         <video controls style={videoSize} poster={`/videos/travessia-capa.png`}>
                             <source src={'/videos/video-travessia.mp4'} />
                         </video>
-                    </div>
+                    </div> */}
                     <div className={brasb.className}>
                          <Link href={`${linkTravessia}`} style={btnTravessia} target={`_blank`}>
                             Inscreva-se
@@ -50,13 +50,13 @@ export default function Travessia(){
                             TRAVESSIA AQUÁTICA
                         </p>
                         
-                        <p className={`${style.txtTexto} ${montserrat.className}`}>
-                            No dia 07/01, o mar de Iriri recebeu 200 competidores numa travessia que foi um sucesso!
-                        </p>
+                        {/* <p className={`${style.txtTexto} ${montserrat.className}`}>
+                            No dia 06/01, o mar de Iriri recebeu 200 competidores numa travessia que foi um sucesso!
+                        </p> */}
                     </div>
                     <div className={brasb.className} style={botoes}>
-                         <Link href={`${linkTravessiaFotos}`} style={btnTravessiaFotos} target={`_blank`}>
-                            Confira as Fotos
+                         <Link href={`${linkTravessia}`} style={btnTravessiaFotos} target={`_blank`}>
+                            Inscreva-se
                          </Link> 
                     </div>
                 </div>

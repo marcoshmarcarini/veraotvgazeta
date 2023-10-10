@@ -24,11 +24,11 @@ export default function MTB(){
                     <div className={style.fotoMTB}>
                         <Image src={`/img/Foto-mtb.png`} width={300} height={343} quality={100} alt={`8ª Corrida TV Gazeta Sul`}/>
                     </div>
-                    <div className={style.videoMTB}>
+                    {/* <div className={style.videoMTB}>
                         <video controls style={videoSize} poster={`/videos/mtb-capa.png`}>
                             <source src={'/videos/video-mtb.mp4'} />
                         </video>
-                    </div>
+                    </div> */}
                     <div className={brasb.className}>
                          <Link href={`${linkMTB}`} style={btnMTB} target={`_blank`}>
                             Inscreva-se
@@ -48,13 +48,13 @@ export default function MTB(){
                         <p className={brasb.className} style={txtTitleMTB}>
                             CIRCUITO MTB
                         </p>
-                        <p className={`${style.txtTexto} ${montserrat.className}`}>
+                        {/* <p className={`${style.txtTexto} ${montserrat.className}`}>
                             O circuito MTB em Presidente Kennedy atraiu diversos ciclistas que se desafiaram em terrenos de todos os tipos.
-                        </p>
+                        </p> */}
                     </div>
                     <div className={brasb.className} style={botoes}>
-                         <Link href={`${linkMTBFotos}`} style={btnMTBFotos} target={`_blank`}>
-                            Confira as Fotos
+                         <Link href={`${linkMTB}`} style={btnMTBFotos} target={`_blank`}>
+                            Inscreva-se
                          </Link> 
                     </div>
                 </div>

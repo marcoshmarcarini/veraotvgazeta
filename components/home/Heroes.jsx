@@ -25,11 +25,11 @@ export default function Heroes(){
                     <div className={style.fotoHeroes}>
                         <Image src={`/img/Foto-heroes.jpeg`} width={300} height={343} quality={100} alt={`Corrida com Obstáculos Heroes Race`}/>
                     </div>
-                    <div className={style.videoHeroes}>
+                    {/* <div className={style.videoHeroes}>
                         <video controls style={videoSize} poster={`/videos/heroes-capa.png`}>
                             <source src={'/videos/video-heroes.mp4'} />
                         </video>
-                    </div>
+                    </div> */}
                     <div className={brasb.className}>
                          <Link href={`${linkHeroes}`} style={btnHeroes} target={`_blank`}>
                             Inscreva-se
@@ -40,26 +40,26 @@ export default function Heroes(){
                     <div className={style.txtHer}>
                         <div className={style.txtDataHeroes}>
                             <p className={brasb.className} style={txtData}>
-                                14/01
+                                13/01
                             </p>
                             <p className={montserrat.className} style={txtLocalHer}>
-                                ITAPEMIRIM
+                                MARATAÍZES
                             </p>
                         </div>
                         <p className={brasb.className} style={txtTitleHer}>
                             CORRIDA COM OBSTÁCULOS HEROES RACE
                         </p>
-                        <p className={`${style.txtTexto} ${montserrat.className}`}>
+                        {/* <p className={`${style.txtTexto} ${montserrat.className}`}>
                              No dia 14/01, Itapemirim recebeu mais de 100 competidores no desafio Heroes Race na praia de Itaóca. Agilidade, atenção e força foram os segredos para ganhar essa competição.
-                        </p>
+                        </p> */}
                     </div>
                     <div className={brasb.className} style={botoes}>
-                        <Link href={`${resHeroes}`} style={btnHeroesRes} target={`_blank`}>
-                            Confira o Resultado
+                        <Link href={`${linkHeroes}`} style={btnHeroesRes} target={`_blank`}>
+                            Inscreva-se
                          </Link> 
-                         <Link href={`${linkHeroesFotos}`} style={btnHeroesFotos} target={`_blank`}>
+                         {/* <Link href={`${linkHeroesFotos}`} style={btnHeroesFotos} target={`_blank`}>
                             Confira as Fotos
-                         </Link> 
+                         </Link>  */}
                     </div>
                 </div>
         </div>

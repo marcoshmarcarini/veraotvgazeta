@@ -26,11 +26,11 @@ export default function Corrida(){
                     <div className={style.fotoCorrida}>
                         <Image src={`/img/Foto-corrida.jpeg`} width={300} height={343} quality={100} alt={`8ª Corrida TV Gazeta Sul`}/>
                     </div>
-                    <div className={style.videoCorrida}>
+                    {/* <div className={style.videoCorrida}>
                         <video controls style={videoSize} poster={`/videos/corrida-capa.png`}>
                             <source src={'/videos/video-corrida.mp4'} />
                         </video>
-                    </div>
+                    </div> */}
                     <div className={brasb.className}>
                          <Link href={`${linkCorrida}`} style={btnCorrida} target={`_blank`}>
                             Inscreva-se
@@ -41,26 +41,26 @@ export default function Corrida(){
                     <div className={style.txtCor}>
                         <div className={style.txtDataCorrida}>
                             <p className={brasb.className} style={txtData}>
-                                28/01
+                                27/01
                             </p>
                             <p className={montserrat.className} style={txtLocalCor}>
                                 MARATAÍZES
                             </p>
                         </div>
                         <p className={brasb.className} style={txtTitleCor}>
-                            8ª CORRIDA TV GAZETA SUL
+                            9ª CORRIDA TV GAZETA SUL
                         </p>
-                        <p className={`${style.txtTexto} ${montserrat.className}`}>
+                        {/* <p className={`${style.txtTexto} ${montserrat.className}`}>
                             A pérola capixaba recebeu 600 atletas na corrida mais charmosa do Espirito Santo.                           
-                        </p>
+                        </p> */}
                     </div>
                     <div className={brasb.className} style={botoes}>
-                        <Link href={`${linkCorridaResultado}`} style={btnCorridaRes} target={`_blank`}>
-                           Confira o Resultado
+                        <Link href={`${linkCorrida}`} style={btnCorridaRes} target={`_blank`}>
+                           Inscreva-se
                          </Link> 
-                         <Link href={`${linkCorridaFotos}`} style={btnCorridaFotos} target={`_blank`}>
+                         {/* <Link href={`${linkCorridaFotos}`} style={btnCorridaFotos} target={`_blank`}>
                             Confira as Fotos
-                         </Link> 
+                         </Link>  */}
                     </div>
                 </div>
         </div>
